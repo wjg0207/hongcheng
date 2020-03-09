@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.imgs {
+  width: 100%;
+  height: 240px;
+}
+
+.imgs img {
+  width: 100%;
+  height: 240px;
+}
+
+.content_wrap {
+  width: 100%;
+  height: 460px;
+}
+
+.content_wrap .about {
+  color: #666;
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 14px;
+}
+
+.content_wrap .about span {
+  color: #363636;
+}
+
+.content_wrap .content {
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+.content_wrap .content .about_left {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.content_wrap .content .about_left .left_list {
+  width: 200px;
+  float: left;
+}
+
+.content_wrap .content .about_left .left_list .title {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 20px;
+  background: #186ec5;
+}
+
+.content_wrap .content .about_left .left_list .title h3 span {
+  border-bottom: 2px solid #fff;
+}
+
+.content_wrap .content .about_left .left_list ul {
+  width: 200px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.content_wrap .content .about_left .left_list ul .contact {
+  margin-top: 30px;
+}
+
+.content_wrap .content .about_left .left_list ul li {
+  height: 40px;
+  background: #CCCCCC;
+  margin-bottom: 1px;
+  padding-left: 50px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.content_wrap .content .about_left .left_list ul li.router-link-active {
+  background: #1b82eb;
+}
+
+.content_wrap .content .about_left .left_list ul li.router-link-exact-active span {
+  color: #fff;
+}
+
+.content_wrap .content .about_left .left_list ul li.router-link-exact-active span::before {
+  content: url(../assets/img/navHover.png);
+  margin-right: 20px;
+}
+
+.content_wrap .content .about_left .left_list .contact {
+  cursor: pointer;
+}
+
+#navs {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+}
+
+#navs li,
+#navs #goTop {
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+#navs #goTop {
+  background: url(../assets/img/ab8.png) no-repeat;
+  width: 46px;
+  height: 56px;
+}
+
+#navs .consult {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  margin-top: 234px;
+}
