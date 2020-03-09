@@ -5,7 +5,7 @@ var Baner = {
     var oImgs = oBannerImg.getElementsByTagName("li");
     var oPrev = document.getElementById("prev");
     var oNext = document.getElementById("next");
-    var timer = null;
+    var timers = null;
     var num = 0;
 
     function Fn() {
@@ -27,14 +27,14 @@ var Baner = {
         num = oImgs.length - 1;
       }
     }
-    var timer = setInterval(function () {
+    timers = setInterval(function () {
       oNext.onclick()
     }, 2000);
     oBanner.onmouseenter = function () {
-      clearInterval(timer);
+      clearInterval(timers);
     }
     oBanner.onmouseleave = function () {
-      timer = setInterval(function () {
+      timers = setInterval(function () {
         oNext.onclick()
       }, 2000);
     }
