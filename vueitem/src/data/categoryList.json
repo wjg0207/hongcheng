@@ -1,0 +1,15 @@
+{
+  "categoryDataLists": [{
+    "id": 1,
+    "category_name": "手机"
+  }, {
+    "id": 2,
+    "category_name": "笔记本"
+  }, {
+    "id": 3,
+    "category_name": "智能硬件"
+  }, {
+    "id": 4,
+    "category_name": "周边配件"
+  }]
+}

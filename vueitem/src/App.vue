@@ -1,12 +1,16 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+	<div id="app">
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
+	export default {
+		name: 'App'
+	}
 </script>
 
-<style lang="less">
-@import url("./styles/common.css");
+<style>
+	@import url("./styles/common.css");
+	@import url("./fonts/iconfont.css");
 </style>

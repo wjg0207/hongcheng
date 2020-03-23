@@ -1,141 +1,76 @@
-<!-- 页脚组件 -->
 <template>
-  <div id="footer">
-    <div class="footer">
-      <div class="footer_left">
-        <div id="nav">
-          <router-link to="/about">关于我们</router-link>
-          <router-link to="/product">产品中心</router-link>
-          <router-link to="/news">新闻动态</router-link>
-          <router-link to="/solution">解决方案</router-link>
-          <router-link to="/sucessful">案例展示</router-link>
-          <router-link to="/contact">联系我们</router-link>
+  <div class="footer">
+    <ul>
+      <router-link to="/home" tag="li">
+        <div class="navimg">
+          <i class="iconfont icon-shouye2" v-if="active==='home'"></i>
+          <i class="iconfont icon-1" v-else></i>
         </div>
-        <span>Copyright &copy;成都宏程科技 All Rights Reserved.蜀ICP备16023362号-1</span>
-      </div>
-      <div class="footer_right">
-        <div class="link">
-          友情链接：
-          <span>
-            爱诚科技
-            <img src="../assets/img/select.png" alt />
-          </span>
+        <span>首页</span>
+      </router-link>
+      <router-link to="/category/1" tag="li">
+        <div class="navimg">
+          <i class="iconfont icon-leimupinleifenleileibie2" v-if="active==='category'"></i>
+          <i class="iconfont icon-leimupinleifenleileibie" v-else></i>
         </div>
-        <p>技术支持 : 爱诚科技</p>
-      </div>
-    </div>
+        <span>分类</span>
+      </router-link>
+      <router-link to="/cart" tag="li">
+        <div class="navimg">
+          <i class="iconfont icon-gouwucheman" v-if="active==='cart'"></i>
+          <i class="iconfont icon-gouwuche" v-else></i>
+        </div>
+        <span>购物车</span>
+      </router-link>
+      <router-link to="/mine" tag="li">
+        <div class="navimg">
+          <i class="iconfont icon-wodedangxuan" v-if="active==='mine'"></i>
+          <i class="iconfont icon-wode" v-else></i>
+        </div>
+        <span>我的</span>
+      </router-link>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  components: {}
+  data() {
+    return {
+      active: "home"
+    };
+  },
+  mounted() {
+    this.active = this.$route.path.slice(1);
+  }
 };
 </script>
-<style lang='less' scoped>
-#footer {
+
+<style lang="less">
+.footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 140px;
-  color: #fff;
-  margin-top: 20px;
-  background: url("../assets/img/footer_bg.png");
-  .footer {
-    width: 1200px;
-    height: 140px;
-    margin: 0 auto;
-    .footer_left {
-      float: left;
-      width: 600px;
-      #nav {
-        float: left;
-        width: 600px;
-        padding-top: 30px;
-        height: 16px;
-        padding-bottom: 50px;
-        a {
-          float: left;
-          color: #fff;
-          height: 16px;
-          font-size: 14px;
-          line-height: 16px;
-        }
-        a:hover {
-          color: #ff0000;
-        }
-        a:first-child {
-          border-right: 2px solid #fff;
-          height: 14px;
-          line-height: 14px;
-          padding-right: 16px;
-        }
-        a:nth-child(2) {
-          border-right: 2px solid #fff;
-          height: 14px;
-          line-height: 14px;
-          margin-left: 16px;
-          padding-right: 16px;
-        }
-        a:nth-child(3) {
-          border-right: 2px solid #fff;
-          height: 14px;
-          line-height: 14px;
-          margin-left: 16px;
-          padding-right: 16px;
-        }
-        a:nth-child(4) {
-          border-right: 2px solid #fff;
-          height: 14px;
-          line-height: 14px;
-          margin-left: 16px;
-          padding-right: 16px;
-        }
-        a:nth-child(5) {
-          border-right: 2px solid #fff;
-          height: 14px;
-          line-height: 14px;
-          margin-left: 16px;
-          padding-right: 16px;
-        }
-        a:last-child {
-          border-right: none;
-          height: 14px;
-          line-height: 14px;
-          margin-left: 16px;
-        }
-      }
+  background-color: #fff;
+  ul {
+    display: flex;
+    height: 1.4rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    li {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
       span {
-        display: block;
-        font-size: 14px;
-      }
-    }
-    .footer_right {
-      float: right;
-      width: 180px;
-      height: auto;
-      font-size: 12px;
-      .link {
-        width: 200px;
-        padding-top: 26px;
-        span {
-          width: 100px;
-          border: 1px solid #fff;
-          padding: 10px 0 10px 10px;
-          img {
-            width: 35px;
-            height: 35px;
-            padding: 5px 0 8px 11px;
-            vertical-align: middle;
-            cursor: pointer;
-            border: none;
-          }
-        }
-      }
-      p {
-        width: 150px;
-        height: 10px;
-        margin: 30px 0 0 64px;
+        font-size: 0.32rem;
       }
     }
   }
+}
+.router-link-active {
+  color: #721c24;
 }
 </style>
