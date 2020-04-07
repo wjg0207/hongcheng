@@ -1,0 +1,93 @@
+.page{
+  margin-bottom: 3rem;
+}
+/* 首页头部 */
+.home-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 100;
+  background: #008941;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 首页轮播图 */
+.swiper-container{
+  height: 8.5rem;
+  width: 100%;
+  margin-top: 50px;
+}
+.swiper-container img{
+  height: 8.5rem;
+  width: 100%;
+}
+
+/* 首页商品列表 */
+.home-product{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.home-product .home-product-list{
+  width: 100%;
+}
+.home-product .home-product-list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-product .home-product-list ul li {
+  width: 45%;
+  height: 14rem;
+  text-align: center;
+  margin: 10px 0 0 10px;
+  border: 1px #ccc solid;
+}
+.home-product .home-product-list ul li a {
+  text-align: left;
+  text-decoration: none;
+  color: #848484;
+}
+.home-product .home-product-list ul li a img {
+  width: 90%;
+}
+.home-product .home-product-list ul li a h3 {
+  margin: 0 0 0 10px;
+  font-size: 0.37rem;
+}
+.home-product .home-product-list ul li a span {
+  font-size: 0.4rem;
+  display: block;
+  margin: 50px 0 0 10px;
+}
+.home-product .home-product-list ul li a span::before {
+  content: "￥";
+}
+.home-product .home-product-list ul li a .price {
+  color: #ec5151;
+  width: 45%;
+  float: left;
+}
+.home-product .home-product-list ul li a .unprice {
+  color: #ccc;
+  float: right;
+  margin-right: 22px;
+  text-decoration: line-through;
+}
+.home-product .home-product-list ul li a div {
+  font-size: 0.4rem;
+  margin: 10px 0 0 10px;
+  color: #ccc;
+}
+.home-product .home-product-list ul li a .new-product {
+  width: 50%;
+  float: left;
+}
+.home-product .home-product-list ul li a .sales {
+  float: right;
+  margin-right: 10px;
+}

@@ -1,0 +1,69 @@
+.red {
+  color: red;
+}
+
+.footer{
+  width: 100%;
+  height: 2.5rem;
+  position: fixed;
+  background: #efefef;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul{
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.footer ul li {
+  font-size: 0.6rem;
+  margin: 0 auto;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.footer ul li.home{
+  background: url("../images/footer/home.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.home-active{
+  background: url("../images/footer/home-active.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.cart{
+  background: url("../images/footer/cart.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.cart-active{
+  background: url("../images/footer/cart-active.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.mine{
+  background: url("../images/footer/mine.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.mine-active{
+  background: url("../images/footer/mine-active.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.category{
+  background: url("../images/footer/category.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.category-active{
+  background: url("../images/footer/category-active.png") no-repeat;
+  background-size: 100%;
+}
+.footer ul li.text{
+  color: #666666;
+}
+.footer ul li.text-active{
+  color: #ec5151;
+}

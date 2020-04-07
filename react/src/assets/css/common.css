@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style: none;
+}
+html,body{
+  font-size: 20px !important;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (min-width:375px) {
+  html,body{
+    font-size: 20px !important;
+  }
+}
+@media screen and (min-width:414px) {
+  html,body{
+    font-size: 22.08px !important;
+  }
+}
+@media screen and (min-width:480px) {
+  html,body{
+    font-size: 25.6px !important;
+  }
+}
+@media screen and (min-width:768px) {
+  html,body{
+    font-size: 40.96px !important;
+  }
+}
+
+.title {
+  font-size: 1rem;
+}
